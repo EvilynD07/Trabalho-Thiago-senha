@@ -1,1 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
+:root {
+    --vermelho-escuro: #4a0000;
+    --vermelho-medio: #7a0000;
+    --vermelho-claro: #b30000;
+
+    --dourado: #d4af37;
+    --dourado-claro: #f5d76e;
+
+    --preto: #0b0b0b;
+    --cinza: #1a1a1a;
+    --branco: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, var(--vermelho-escuro), var(--preto));
+    color: var(--branco);
+    min-height: 100vh;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* TÍTULOS */
+.titulo-principal {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    color: var(--dourado);
+    text-align: center;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.titulo-secundario {
+    text-align: center;
+    color: #e7c97a;
+    font-weight: 300;
+}
+
+/* ICONE */
+.conteudo-titulo img {
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    filter: drop-shadow(0 0 10px var(--dourado));
+}
+
+/* CAIXAS */
+.conteudo-senha,
+.parametro {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--dourado);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* INPUT SENHA */
+#campo-senha {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--dourado);
+    background: var(--cinza);
+    color: var(--dourado-claro);
+    font-size: 1.2rem;
+    outline: none;
+}
+
+/* BOTÕES */
+.parametro-senha__botao {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    background: var(--vermelho-medio);
+    color: var(--dourado);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.parametro-senha__botao:hover {
+    background: var(--dourado);
+    color: var(--vermelho-escuro);
+    transform: scale(1.1);
+}
+
+/* CHECKBOX */
+.checkbox {
+    accent-color: var(--dourado);
+    transform: scale(1.1);
+}
+
+/* BARRA DE FORÇA */
+.barra {
+    height: 10px;
+    background: #333;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.forca {
+    height: 10px;
+    border-radius: 20px;
+    margin-top: -10px;
+    transition: 0.3s;
+}
+
+.fraca {
+    width: 33%;
+    background: #ff3b3b;
+}
+
+.media {
+    width: 66%;
+    background: #ffcc33;
+}
+
+.forte {
+    width: 100%;
+    background: var(--dourado);
+}
+
+/* TEXTO ENTROPIA */
+.entropia {
+    margin-top: 10px;
+    color: var(--dourado-claro);
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+.rodape {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid var(--dourado);
+    color: var(--dourado);
+    font-size: 0.85rem;
+  }
